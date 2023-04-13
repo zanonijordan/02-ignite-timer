@@ -114,5 +114,8 @@ export const MinutesAmountInput = styled(BaseInput)`
 export const TaskInput = styled(BaseInput)`
   ${({ theme }) => css`
     flex: 1;
+    &::-webkit-calendar-picker-indicator {
+      display: none !important;
+    }
   `}
 `
