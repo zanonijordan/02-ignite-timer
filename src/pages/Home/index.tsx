@@ -20,10 +20,7 @@ const newCycleFormValidationSchema = zod.object({
     .max(60, 'the range must be at maximun 60 minutes'),
 })
 
-interface NewCycleFormatData {
-  task: string
-  minutesAmount: number
-}
+type NewCycleFormatData = zod.infer<typeof newCycleFormValidationSchema>
 
 export function Home() {
   const { register, handleSubmit, watch } = useForm<NewCycleFormatData>({
