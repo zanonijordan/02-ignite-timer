@@ -74,7 +74,6 @@ export const BaseCountdownButton = styled.button`
     cursor: pointer;
   `}
 `
-
 export const StartCountdownButton = styled(BaseCountdownButton)`
   ${({ theme }) => css`
     background: ${theme['green-500']};
@@ -90,7 +89,6 @@ export const StartCountdownButton = styled(BaseCountdownButton)`
     }
   `}
 `
-
 export const StopCountdownButton = styled(BaseCountdownButton)`
   ${({ theme }) => css`
     background: ${theme['red-500']};
